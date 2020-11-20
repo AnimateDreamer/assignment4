@@ -1,6 +1,7 @@
 /*==========================================
 
         Universal styling
+
 ==========================================*/
 
 * {
@@ -8,6 +9,20 @@
   padding:0;
   border: 0;
 }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*==========================================
+
+        Navigation styling
+
+==========================================*/
+
 
 header {
   text-align: center;
@@ -28,4 +43,30 @@ header nav a {
 
 header nav a:hover {
   color: lightgreen;
+}
+
+/*==========================================
+
+        Animation styling
+
+==========================================*/
+
+.sky,
+.ground,
+.grass {
+  position: relative;
+}
+
+
+.sky {
+  height: 50%;
+  background: skyblue;
+}
+
+.wolf {
+    height: 200px;
+}
+
+.grass {
+  height: 30%
 }
