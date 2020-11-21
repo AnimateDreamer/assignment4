@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Nerko One', cursive;
 }
 
 html,
@@ -15,6 +16,10 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+}
+
+html {
+    background: lightyellow;
 }
 
 
@@ -45,6 +50,94 @@ header nav a:hover {
     color: lightgreen;
 }
 
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+}
+
+
+/*==========================================
+
+        Text styling
+
+==========================================*/
+
+h1,
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: darkred;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/*==========================================
+
+        Flip Card styling
+
+==========================================*/
+
+.flip-card {
+    position: absolute;
+    z-index: 1;
+    width: 7%;
+    display: inline-block;
+    background: transparent;
+    margin: 30px;
+    bottom: 30vw;
+}
+
+.flip-card img {
+    width: 100%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-back {
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.box1 {
+    left: 30%;
+}
+
+.box2 {
+    left: 50%;
+}
+
+.box3 {
+    left: 70%;
+}
+
 
 /*==========================================
 
@@ -58,25 +151,19 @@ header nav a:hover {
 }
 
 .sky {
-    height: 40%;
+    height: 100%;
     background: skyblue;
 }
 
 .grass {
     width: 100%;
-    position: relative;
-    top: -150px;
-}
-
-.ground {
-    background: skyblue;
+    position: fixed;
+    bottom: 0px;
 }
 
 .wolf {
     position: absolute;
-    height: 200px;
-    left: 50px;
-    top: 220px;
+    width: 20%;
     animation: move 4s forwards infinite linear, jump 1s infinite ease-out
 }
 
@@ -103,7 +190,7 @@ header nav a:hover {
         transform: translateX(-100px)
     }
     to {
-        transform: translatex(1200px)
+        transform: translatex(1000px)
     }
 }
 
@@ -118,12 +205,12 @@ header nav a:hover {
 
 @keyframes jump {
     0% {
-        top: 220px;
+        bottom: 0px;
     }
     50% {
-        top: -25px;
+        bottom: 30%;
     }
     100% {
-        top: 220px;
+        bottom: 0px;
     }
 }
