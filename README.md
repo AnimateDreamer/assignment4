@@ -47,7 +47,7 @@ Here are the code for this website in order to function properly:
     </div>
 ```
 
-The <div> has 6 classes,  `flip-card box1-3`will show the mystery boxes. `flip-card-inner` will include the front and back side of the mystery box. The `flip-card-front` class will show the block image. Each `flip-card-back` will display a different food image.
+The ``<div>`` has 6 classes,  `flip-card box1-3`will show the mystery boxes. `flip-card-inner` will include the front and back side of the mystery box. The `flip-card-front` class will show the block image. Each `flip-card-back` will display a different food image.
 
 ### Flip animation
 In order to do the flip animation for the mystery boxes and the food items, here are the required CSS:
@@ -163,8 +163,14 @@ Here are the CSS for the animation:
     }
 }
 ```
+I, Tiffany Liu, have read the point deduction list and understand that I will lose points for missing items.
+
+![flower](https://purepng.com/public/uploads/large/purepng.com-christmas-poinsettia-flowerchristmasxmaspartyflowernaturechristmas-poinsettia-flower-911524569065ivoyp.png)
 
 ## Resources
+
+* [Floats](https://ufl.zoom.us/recording/play/rtBgWT35brdzOKkpkv4sB4oGEQsi5OxPFSsk0ztIMHrK7Yh_RMKsAgKEOKlclNvh?autoplay=true&startTime=1540053996000)
+
 * [CSS Animation](https://ufl.zoom.us/recording/play/pFAh_A8oQ2fLWqWoLa0SNUoqDk10-_X-vQMVbrUHvjw1BsLK16Wi4KQYberm4SnB?autoplay=true&startTime=1540684427000)
 
 * [Flip Animation](https://ufl.zoom.us/rec/play/P0sl7A6Kywrv1YjUJYYhUblmkS-Qly641wQLw_B8ijR9Fe-z95H0cEkBCP94amArvGYTdVOVEmnEYq9h.M88Tj91fcJeup2RT?autoplay=true&startTime=1604249108000)
